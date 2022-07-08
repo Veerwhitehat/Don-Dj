@@ -1,0 +1,44 @@
+.heading{
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+}
+
+.notee{
+    font-size: 15px;
+    color: #000000;
+}
+body{
+    background-size: cover;
+}
+.div_speedee{
+    float: left;
+}
+
+.div_volumee{
+    float: right;   
+}
+
+.div_speedee_imagee{
+
+    width: 200px;
+    border-radius: 100px;
+
+}
+
+.div_volumee_imagee{
+
+    width: 200px;
+    border-radius: 100px;
+
+}
+
+#speedee{
+    font-size: 23px;
+    margin: 15px;
+}
+
+#volumee{
+    font-size: 23px;
+    margin: 15px;
+}
