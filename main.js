@@ -10,10 +10,15 @@ leftWristY=0;
 rightWristX=0;
 rightWristY=0;
 
+score_rw=0;
+score_lw=0;
+
 function preload() {
 song1=loadSound("mashup.mp3");
 song2=loadSound("ami.mp3");
 }
+
+
 
 function setup() {
     
@@ -35,8 +40,37 @@ function draw(){
     image(video,0,0,500,400);
     song1_status= song1.isPlaying();
     song2_status= song2.isPlaying();
+    fill("red");
+    stroke("black");
+    if (score_rw>0.2) {
+
+        circle(rightWristX, rightWristY, 20);
+        song2.stop();
+
+        if (song1_status==false) {
+
+            song1.play();
+            document.getElementById("name").innerHTML="Indian Mashup"
+            
+        }
+        
+    }
+    if (score_lw>0.2) {
+
+        circle(leftWristX, leftWristY, 20);
+        song1.stop();
+
+        if (song2_status==false) {
+
+            song2.play();
+            document.getElementById("name").innerHTML="Mere Dholna"
+            
+        }
+        
+    }
     
 }
+
 
 function play() {
 
